@@ -14,6 +14,23 @@ print(type(height))
 isMuslim = True
 print(type(isMuslim))
 
-# complex
+# complex (must have to use letter 'j')
 isComplex = 7j
 print(type(isComplex))
+
+# none type data
+x = None
+print(type(x))
+
+# list type
+listType = [1, 2, 3, 4]
+print(type(listType))
+
+# tuple
+# immutable
+tupleType = ('hafiz', 'rafi', 'nishat')
+print(type(tupleType))
+
+# range
+rangeType = range(10)
+print(type(rangeType))
