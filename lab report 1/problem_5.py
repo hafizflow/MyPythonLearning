@@ -3,21 +3,21 @@
 # case-02:Access each item’s  name and convert the lower case letters into
 # uppercase as well as convert the uppercase letters into lowercase letters.
 
-names = ['hafiz', 'Rafi', 'nishat', 'ZAHID', 'SaNi', 'zk']
-new_list = []
+names = ['hafiZ', 'Rafi', 'nishat', 'ZAHID', 'SaNi', 'Zk']
+
+# list comprehension method
+new_list = [len(i) for i in names]
 
 for i in range(len(names)):
-    new_list.append(len(names[i]))
-
-    upperLetter = ''
-    lowerLetter = ''
-
+    modified_word = ''
     for j in names[i]:
         if j.islower() and j.isascii():
-            upperLetter += j.upper()
+            modified_word += j.upper()
         elif j.isupper() and j.isascii():
-            lowerLetter += j.lower()
-    names[i] = upperLetter + lowerLetter
+            modified_word += j.lower()
+        else:
+            modified_word += j
+    names[i] = modified_word
 
 print(new_list)
 print(names)

@@ -3,10 +3,10 @@
 # Sample List : ['abc', 'xyz', 'aba', '1221']
 # Expected Result : 2
 
-sampleList = ['abc', 'xyz', 'aba', '1221']
+sampleList = ['abc', 'xyz', 'aba', '1221', '1551']
 count = 0
 
 for i in sampleList:
-    if len(i) > 2 and i[0] == i[len(i) - 1]:
+    if len(i) > 2 and i[0] == i[-1]:
         count += 1
 print(count)
