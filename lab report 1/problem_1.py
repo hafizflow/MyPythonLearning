@@ -6,6 +6,7 @@
 def find_second_max(arr):
     if len(arr) < 2:
         return 'The array must have more than one element'
+
     max_value = float('-inf')
     second_max = float('-inf')
     for i in arr:
@@ -14,6 +15,7 @@ def find_second_max(arr):
             max_value = i
         elif i > second_max and i != max_value:
             second_max = i
+            
     if second_max == float('-inf'):
         return 'No second max found'
     return second_max
