@@ -10,4 +10,4 @@ def addition(num):
     print(total)
 
 
-addition(78)
+addition(5678)
