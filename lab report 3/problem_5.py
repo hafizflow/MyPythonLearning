@@ -4,4 +4,4 @@ def str_reverse(user_str):
     return user_str[::-1]
 
 
-print(str_reverse('Hello'))
+print(str_reverse('Hafiz'))

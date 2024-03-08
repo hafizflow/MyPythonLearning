@@ -11,4 +11,4 @@ def count_digit(num):
     return count
 
 
-print(count_digit(56789))
+print(f'Total digit in the number: {count_digit(56789)}')

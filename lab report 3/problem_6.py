@@ -15,4 +15,5 @@ def calculate_result(num):
         print('Fail')
 
 
-calculate_result(50)
+print('Your grade:', end=' ')
+calculate_result(90)

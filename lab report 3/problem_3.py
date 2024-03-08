@@ -2,8 +2,9 @@
 # Take the Celsius temperature as input from the user.
 
 def temp_convert(celsius):
-    return (9 / 5 * celsius) + 32
+    fahrenheit = (9 / 5 * celsius) + 32
+    print(f'Converted temperature in Fahrenheit {fahrenheit} °C')
 
 
 input_celsius = float(input('Enter temperature in Celsius: '))
-print(temp_convert(input_celsius))
+temp_convert(input_celsius)

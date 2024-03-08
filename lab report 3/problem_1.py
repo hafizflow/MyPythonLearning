@@ -1,6 +1,9 @@
 # 1. String Reverse: Write a Python function to reverse a given string and return the reversed string.
 def string_rev(user_str):
-    return user_str[::-1]
+    reverse_str = ''
+    for i in range(len(user_str) - 1, -1, -1):
+        reverse_str += user_str[i]
+    print(reverse_str)
 
 
-print(string_rev('Hello'))
+string_rev('Hello')
