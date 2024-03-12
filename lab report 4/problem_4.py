@@ -4,7 +4,7 @@ def transpose_matrix(matrix):
     rows = len(matrix)
     cols = len(matrix[0])
     t_matrix = []
-    
+
     # making a 0 matrix
     for i in range(cols):
         new_row = []
@@ -20,7 +20,8 @@ def transpose_matrix(matrix):
 
 lists = [
     [1, 2, 3],
-    [4, 5, 6]
+    [4, 5, 6],
+    [7, 8, 9]
 ]
 
 print(transpose_matrix(lists))
