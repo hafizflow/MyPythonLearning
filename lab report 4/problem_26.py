@@ -5,4 +5,5 @@ def length_dictionary(dic):
     return len(dic)
 
 
-dictionary = {}
+dictionary = {1: 'Hafiz', 2: 'Nishat', 3: 'Rafi'}
+print(length_dictionary(dictionary))

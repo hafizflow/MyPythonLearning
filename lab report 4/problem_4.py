@@ -5,16 +5,11 @@ def transpose_matrix(matrix):
     cols = len(matrix[0])
     t_matrix = []
 
-    # making a 0 matrix
-    for i in range(cols):
-        new_row = []
-        for j in range(rows):
-            new_row.append(0)
-        t_matrix.append(new_row)
-
     for i in range(rows):
+        t_row = []
         for j in range(cols):
-            t_matrix[j][i] = matrix[i][j]
+            t_row.append(lists[j][i])
+        t_matrix.append(t_row)
     return t_matrix
 
 
