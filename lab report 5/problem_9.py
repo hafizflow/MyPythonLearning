@@ -7,14 +7,15 @@
 # Zahid Sani Wakif
 # Output: ['S', 'W', 'Z', 'a', 'd', 'f', 'h', 'i', 'k', 'n']
 
+n = 3
+name_list = []
+for i in range(n):
+    name_list.append(input('Enter your name: '))
 
-# n = int(input("Enter the size of the list: "))
-# characters = set()
-#
-# for _ in range(n):
-#     string_input = input("Enter a string: ")
-#     characters.update(set(string_input))
-#
-# result_list = sorted(list(characters))
-#
-# print("Output:", result_list)
+new_list = []
+for name in name_list:
+    for char in name:
+        if char not in new_list:
+            new_list.append(char)
+
+print(sorted(new_list))
