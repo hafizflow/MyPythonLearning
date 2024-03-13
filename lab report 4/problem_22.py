@@ -8,7 +8,6 @@ def string_dict(string):
             dictionary[char] += 1
         else:
             dictionary[char] = 1
-
     print(dictionary)
 
 
