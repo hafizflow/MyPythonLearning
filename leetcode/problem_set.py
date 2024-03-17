@@ -213,3 +213,115 @@
 #         result.append(number + 2)
 #
 # print(len(result))
+
+
+# student_result = {
+#     "student1": {"Math": 75, "Physics": 83, "English": 76},
+#     "student2": {"Math": 81, "Physics": 85, "English": 72},
+#     "student3": {"Math": 75, "Physics": 81, "English": 85}
+# }
+# output_value = []
+# for i in student_result:
+#     individual = (student_result[i].values())
+#     total = sum(individual)
+#     avg = round(total / len(student_result[i]))
+#     output_value.append(avg)
+#
+# print(f'Average {output_value}')
+
+
+# avg = 0
+# total = 0
+# count = 0
+# while True:
+#     marks = int(input('Enter your mark: '))
+#     if marks == -1:
+#         break
+#     total += marks
+#     count += 1
+#
+# avg = round(total / count)
+# print(avg)
+
+# lists = ['1', '2', '3']
+# x = list(map(int, lists))
+# print(x)
+# Two lists
+
+
+# list_of_tuples = [('a', 1), ('b', 2), ('c', 3)]
+# my_dict = dict(list_of_tuples)
+# print(my_dict)
+
+
+# keys = ['a', 'b', 'c', 'a']
+# values = [1, 2, 3]
+#
+# dic = dict(zip(keys, values))
+# print(dic)
+
+# dic = {x: 0 for x in values}
+# print(dic)
+
+# city = dict()
+# city['a'] = 1
+# print(city)
+
+
+# dic = {'a': 1, 'b': 2, 'c': 3}
+# for key, value in dic.items():
+#     print(key, value)
+
+# update
+# dic.update({'a': 90})
+# print(dic)
+
+# del dic['a']
+# print(dic)
+
+# dic.clear()
+# dic.clear()
+# print(dic)
+
+# lists = [1, 2, 3]
+# lists.clear()
+# print(lists)
+
+# a = {1, 2, 3}.union({4, 5})
+# print(a)
+
+# lists = [1, 2, 3, 4]
+# z = [x for x in reversed(lists)]
+# print(z)
+
+# lists.sort(reverse=True)
+# print(lists)
+
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# for i in matrix:
+#     for j in i:
+#         print(j, end=' ')
+#     print()
+
+# tup = (1, 2)
+# tup += (4,)
+# print(tup)
+
+# lists = [1, 2, 3, 4]
+# print(lists.index(1))
+
+# a = 10
+#
+#
+# def fun():
+#     a = 5
+#     print(a)
+#
+#
+# print(a)
+# fun()
