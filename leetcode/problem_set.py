@@ -325,3 +325,241 @@
 #
 # print(a)
 # fun()
+
+# def generate(first, last, id):
+#     password = ''
+#     password += first[:3].upper()
+#     password += str(ord(last[-1])) + str(ord(last[-2]))
+#     s_id = id[2:5]
+#     password += s_id[::-1]
+#     return password
+#
+#
+# print(generate('Umme', 'Ayman', '3215678'))
+
+# def change(sentence: str, target):
+# lists = sentence.split()
+#
+# for i in range(len(lists)):
+#     if lists[i] == '5th':
+#         lists[i] = target
+# return ' '.join(lists)
+
+# return sentence.replace('5th', target)
+
+
+# print(change('I am in 5th semester', '7th'))
+
+
+# list1 = [1, 2, 3]
+# list2 = ['a', 'b', 'c']
+# dic = dict(zip(list1, list2))
+# print(dic)
+
+
+# grad = {
+#     'A+': range(80, 100),
+#     'A': range(75, 80)
+# }
+#
+#
+# def fun(dic: dict, num):
+#     for grade, marks in dic.items():
+#         if num in marks:
+#             print(f'Your get {grade}')
+#
+#
+# fun(grad, 76)
+
+# student_result = {
+#     "student1": {"Math": 75, "Physics": 83, "English": 76},
+#     "student2": {"Math": 81, "Physics": 85, "English": 72},
+#     "student3": {"Math": 75, "Physics": 81, "English": 85}
+# }
+#
+# lists = []
+#
+# for i in student_result:
+#     marks = student_result[i].values()
+#     total = sum(marks)
+#     avg = round(total / len(student_result[i]))
+#     lists.append(avg)
+#
+# print(lists)
+
+
+# first_matrix = [[10, 2, 3], [4, 5, 2], [2, 7, 9]]
+# second_matrix = [[7, 2, 3], [4, 12, 6], [7, 0, 8]]
+
+# first_matrix.extend(second_matrix)
+# print(first_matrix)
+
+# new = first_matrix + second_matrix
+# print(new)
+
+# x = [j for i in first_matrix for j in i]
+# print(x)
+
+# x = []
+# for i in first_matrix:
+#     for j in i:
+#         x.append(j)
+# print(x)
+
+# for i in first_matrix:
+#     x.extend(i)
+# print(x)
+
+# final = []
+# for i in range(2):
+#     row = []
+#     for j in range(3):
+#         row.append(input())
+#     final.append(row)
+# print(final)
+
+# dic = {i: 'a' for i in range(3)}
+# print(dic)
+
+# first_matrix = [[10, 2, 3], [4, 5, 2], [2, 7, 9]]
+# dic = {}
+#
+# for i in first_matrix:
+#     for j in i:
+#         if j not in dic:
+#             dic[j] = 1
+#         else:
+#             dic[j] += 1
+# print(dic)
+
+
+# matrix = [
+#     [8, 2, 3],
+#     [4, 5, 2],
+#     [6, 2, 7],
+# ]
+# new = []
+# row = len(matrix)
+# col = len(matrix[0])
+#
+# for i in range(row):
+#     rows = []
+#     for j in range(col):
+#         rows.append(matrix[j][i])
+#     new.append(rows)
+# print(new)
+
+
+# my_tuple = (10, "apple", 3.14)
+# x, y, z = my_tuple
+# print(x, y, z)
+
+
+# tuple1 = [9, 7, 6, 5, 1]
+#
+# for i in range(len(tuple1)):
+#     for j in range(len(tuple1) - i - 1):
+#         if tuple1[j] > tuple1[j + 1]:
+#             tuple1[j], tuple1[j + 1] = tuple1[j + 1], tuple1[j]
+#
+# print(tuple1)
+
+# lists = [2, 1, 2, 2, 3, 2]
+# new = []
+# for i in lists:
+#     if lists.count(i) < 2:
+#         new.append(i)
+# print(new)
+
+# set1 = {1, 4, 6, 9}
+# set2 = {1, 6, 7, 9}
+# set3 = set()
+#
+# for i in set1:
+#     if i in set2:
+#         set3.add(i)
+# print(set3)
+
+# dictionary = {"Israt": 100, 'Raha': 89}
+# dictionary.update({'Israt': 90})
+# dictionary['nishat'] = 100
+# print(dictionary)
+
+# my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+# for i, j in my_dict.items():
+#     if j == 30:
+#         print(i)
+
+# nishat = {"name": "Alice", "age": 30, "city": "New York"}
+# lol = {"Israt": 100, 'Raha': 89}
+#
+# for i, j in lol.items():
+#     nishat[i] = j
+# print(nishat)
+
+# nishat.update(lol)
+# print(nishat)
+
+
+# nishat = {"name": "Alice", "age": 30, "city": "New York"}
+# del nishat['name']
+# nishat.pop('name')
+# print(nishat)
+
+# people_dict = {"Alice": 30, "Bob": 25, "Charlie": 32}
+# new = []
+# for i, j in people_dict.items():
+#     new.append((i, j))
+# new.sort(key=lambda x: x[1])
+#
+# print(dict(new))
+
+# lists = [1, 2, 3]
+# dic = {x: x ** 2 for x in lists}
+# print(dic)
+
+
+# products = {
+#     "Laptop": {"price": 1200, "quantity": 5},
+#     "Phone": {"price": 800, "quantity": 12},
+#     "Tablet": {"price": 500, "quantity": 11},
+# }
+# new = []
+# for i, j in products.items():
+#     new.append((i, j))
+# new.sort(key=lambda z: z[1]['price'])
+# x = dict(new)
+# for i in x.items():
+#     print(i)
+
+
+# string = 'hafiz'
+# new = ''
+# print(string[::-1])
+
+# for i in string:
+#     new = i + new
+# print(new)
+
+# for i in range(len(string) - 1, -1, -1):
+#     new += string[i]
+# print(new)
+
+# x = [1, 2, 3]
+# u = []
+# for i in x:
+#     u.append(str(i))
+# print(u)
+
+# c = 18
+# f = (9 / 5 * c) + 32
+# print(f)
+
+
+# x = 56
+# count = 0
+# while x > 0:
+#     r = x % 10
+#     count += r
+#     x = x // 10
+# print(count)
